@@ -1,0 +1,1082 @@
+
+ <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="HandheldFriendly" content="true" /><title>Site Oficial - FUTMILIONARIO</title><meta name="description" content="" /><meta name="keywords" content="" /><link rel="shortcut icon" href=""  type="image/x-icon"><meta property="og:title" content="Site Oficial - FUTMILIONARIO"/><meta property="og:description" content=""/><meta property="og:image" content=""/><!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link href="" type="text/css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" type="text/css" rel="stylesheet"><link href="//fonts.googleapis.com/css?family=Montserrat:400,700,300,300italic,400italic,700italic&subset=latin,latin-ext,cyrillic,cyrillic-ext" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/IkXADuCh/Integral.css" type="text/css" rel="stylesheet"><!--[if lt IE 9]><link href="https://old.assets-landingi.com/bootstrap/css/ie8-grid.css?v=8.9.8" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/UJm5fd24/base_ie8.css" type="text/css" rel="stylesheet"><![endif]--><style data-name="customCss" type="text/css">/*WHATSAPP POPUP*/
+
+.d-none {
+    display: none;
+}
+
+.no-margin {
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pop-whats .pop-whats_icon {
+    background: #2db742;
+}
+
+.pop-whats .pop-whats_icon:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent url('https://midiaronaldlopes.com.br/script/whats-logo.svg') center center no-repeat;
+    background-size: 30px auto;
+    -webkit-background-size: 30px auto;
+    -moz-background-size: 30px auto;
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+}
+
+.pop-whats .pop-whats_icon:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent url('https://midiaronaldlopes.com.br/script/x-icon.svg') center center no-repeat;
+    background-size: 14px auto;
+    -webkit-background-size: 14px auto;
+    -moz-background-size: 14px auto;
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    -ms-transform: scale(0) rotate(-360deg);
+    transform: scale(0) rotate(-360deg);
+    -webkit-transform: scale(0) rotate(-360deg);
+    -moz-transform: scale(0) rotate(-360deg);
+}
+
+.pop-whats.wa__active .pop-whats_icon:before {
+    opacity: 0;
+    -ms-transform: scale(0) rotate(360deg);
+    transform: scale(0) rotate(360deg);
+    -webkit-transform: scale(0) rotate(360deg);
+    -moz-transform: scale(0) rotate(360deg);
+}
+
+.pop-whats.wa__active .pop-whats_icon:after {
+    opacity: 1;
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+}
+
+img.pop-fechar {
+    position: absolute;
+    top: 12px;
+    cursor: pointer;
+    right: 12px;
+    z-index: 99999;
+    height: auto;
+    width: 14px;
+}
+
+.box-whats {
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #8e8e8e;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -ms-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    -webkit-transform: translate(0, 50px);
+    -moz-transform: translate(0, 50px);
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    will-change: transform, visibility, opacity;
+    /*max-width: calc(100% - 50px);*/
+}
+
+.box-whats.wa__active {
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    visibility: visible;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.box-whats .header {
+    background-color: #295f54;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: left;
+}
+
+.box-whats .content {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #dddddd;
+}
+
+.box-whats .content .text-content {
+    background-color: #fff;
+    position: relative;
+}
+
+.box-whats .foot {
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+}
+
+.box-whats .foot form.form-pop-whats {
+    position: relative;
+}
+
+.box-whats .foot form.form-pop-whats button {
+    width: 15%;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 20px;
+    color: #3e8979;
+    transform: translateY(-50%);
+}
+
+.box-whats .foot form.form-pop-whats input {
+    font-family: 'Source Sans Pro', 'Helvetica', sans-serif !important;
+    font-size: 16px;
+    color: #333;
+    width: 85%;
+    background-color: #fff;
+    border: 0;
+    height: 50px;
+    resize: none;
+    outline: none;
+    font-weight: normal;
+    line-height: 20px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.box-whats .header .img-whats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.box-whats .header .img-whats img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 200px;
+}
+
+@media (max-width: 330px) {
+    .box-whats .header {
+        position: relative;
+        padding: 15px 10px 15px 70px;
+    }
+
+    .box-whats .header h2 {
+        font-size: 16px;
+    }
+
+    .box-whats .header h3 {
+        font-size: 12px;
+    }
+
+    .box-whats .header .img-whats {
+        left: 10px !important;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 429px) {
+    .box-whats .header {
+        position: relative;
+        padding: 15px 10px 15px 80px;
+    }
+
+    .box-whats .header h2 {
+        font-size: 16px;
+    }
+
+    .box-whats .header h3 {
+        font-size: 12px;
+    }
+
+    .box-whats .header .img-whats {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 429px) {
+    .pop-whats {
+        position: fixed;
+        right: 20px;
+        bottom: 15px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .pop-whats .pop-whats_icon {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        background: #2db742;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -webkit-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+    }
+
+    .ball-red {
+        position: absolute;
+        right: 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+    }
+
+    .box-whats {
+        z-index: 9;
+        position: fixed;
+        right: 20px;
+        bottom: 70px;
+        width: calc(100% - 20px * 2);
+    }
+
+    .box-whats:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 24px;
+        background-color: #fff;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+    }
+
+    .box-whats .header h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .box-whats .header h3 {
+        margin-bottom: 10px;
+        font-weight: 400;
+        line-height: 0;
+        color: #fff;
+    }
+
+    .box-whats .content {
+        padding: 0 20px 0 20px;
+        background: center top no-repeat url('https://midiaronaldlopes.com.br/script/whats-logo.svg');
+    }
+
+    .box-whats .content .text-content span.nom-brv {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #888;
+    }
+
+    .box-whats .content .text-content span.data-brv {
+        text-align: right;
+        font-size: 12px;
+        display: block;
+        font-weight: 600;
+        line-height: 9px;
+        color: #888;
+        margin-top: 10px;
+    }
+
+    .box-whats .content .text-content {
+        display: inline-block;
+        color: #444;
+        border-radius: 10px;
+        padding: 10px 15px 10px 15px;
+        font-size: 15px;
+        margin: 20px 30px 20px 0;
+        font-weight: 600;
+        word-wrap: break-word;
+        width: calc(100% - 20px * 2);
+        box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+    }
+
+    .box-whats .content .text-content:before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: -5px;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+
+    .box-whats .foot {
+        padding: 0;
+    }
+}
+
+@media (min-width: 430px) {
+    .pop-whats {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .pop-whats .pop-whats_icon {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        background: #2db742;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -webkit-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+        -moz-box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .14);
+    }
+
+    .ball-red {
+        position: absolute;
+        right: 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+    }
+
+    .box-whats {
+        z-index: 999;
+        position: fixed;
+        right: 30px;
+        bottom: 100px;
+        width: 400px;
+    }
+
+    .box-whats:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 24px;
+        background-color: #fff;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+    }
+
+    .box-whats .header {
+        position: relative;
+        padding: 15px 10px 15px 100px;
+    }
+
+    .box-whats .header .img-whats {
+        width: 60px;
+        height: 60px;
+    }
+
+    .box-whats .header h2 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .box-whats .header h3 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .box-whats .content {
+        padding: 0 20px 0 20px;
+        background: center top no-repeat url('https://midiaronaldlopes.com.br/script/bg-whatsapp.jpg');
+    }
+
+    .box-whats .content .text-content {
+        display: inline-block;
+        color: #444;
+        border-radius: 10px;
+        padding: 10px 15px 10px 15px;
+        margin: 30px 30px 10px 0;
+        font-size: 15px;
+        font-weight: 600;
+        word-wrap: break-word;
+        box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
+        text-align: left;
+    }
+
+    .box-whats .content .text-content span.nom-brv {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #777;
+    }
+
+    .box-whats .content .text-content span.data-brv {
+        text-align: right;
+        font-size: 12px;
+        display: block;
+        line-height: 9px;
+        font-weight: 600;
+        color: #888;
+    }
+
+    .box-whats .content .text-content:before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: -5px;
+        width: 13px;
+        height: 13px;
+        transform: rotate(45deg);
+        background-color: #fff;
+    }
+
+    .box-whats .foot {
+        padding: 0;
+    }
+}
+
+a.btn-whats {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: 15px;
+    display: block;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-appearance: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: rgb(79, 206, 93);
+    overflow: hidden;
+}
+
+a.btn-whats:hover, a.btn-whats:focus {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wpp-typing-loader {
+    margin: 6px 30px;
+    width: 6px;
+    border-radius: 10px;
+    height: 6px;
+    -webkit-animation: line 1s linear infinite alternate;
+    -moz-animation: line 1s linear infinite alternate;
+    animation: line 1s linear infinite alternate;
+}
+
+@-webkit-keyframes line {
+    0% {
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 2);
+
+    }
+}
+
+@-moz-keyframes line {
+    0% {
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 2);
+
+    }
+}
+
+@keyframes line {
+    0% {
+
+        background-color: rgba(0, 0, 0, 1);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 2),
+        24px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 12px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        24px 0px 0px 0px rgba(0, 0, 0, 2);
+
+    }
+}</style><link href="https://styles.assets-landingi.com/assets/css/2.11-landend-base.css" type="text/css" rel="stylesheet"><link href="https://styles.assets-landingi.com/fZSKgwxp/base.css" type="text/css" rel="stylesheet"><script>
+    var landingiInternalDetails = {
+        'landing_id': '1005554',
+        'landing_hash': '49e80cd6312f5c15732e',
+        'landing_variant_hash': '',
+        'landing_name': 'P%C3%A1gina+de+Venda+-+FUT+2',
+        'landing_lang': 'pt',
+        'account_uuid': '42d0e110-b4be-11ea-9153-9e5061b4ba7a',
+        'apikey': 'd25f709f-3b74-452d-9f80-cd18d9ee89e0'
+   }
+</script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N42MJ63"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script src="https://player.vimeo.com/api/player.js"></script><script src="https://popups.landingi.com/api/v2/landing/install-code?apikey=d25f709f-3b74-452d-9f80-cd18d9ee89e0&landing=49e80cd6312f5c15732e"></script><script src="https://scripts.assets-landingi.com/lightboxes/lightbox-render.js?v=1612223865"></script>
+<script>
+window.addEventListener('load', function () {
+    LightboxRender.init({
+        useAaf: true
+    })
+});
+</script></head><body id="TxvpQxGuo6CkxW3pseVeXnPkXz3TAWhR">
+<div id="fwG8O6R5wFuI4GIMqEzXMxnoiEH1Tctn" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="oQWF7Bwkd5t8V6DWB3dDvwQtBmDSAzbk" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">JUNTE-SE AO MAIOR GRUPO ESPORTIVO DO MUNDO</span></p></div><div id='NXxrJOTT5ryiA3KqkCw0zXb0lm2IZFBl' data-vimeo-url='https://vimeo.com/497650334' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('NXxrJOTT5ryiA3KqkCw0zXb0lm2IZFBl', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><a href="#Zwgf20boqOBWFTGb5XZTMRpfTqxKznZ3" id="UE96Xe8cyZAmx6eZcQEgAc8pfe3PAzmV" class="widget widget-button wow bounceInLeft"  version="3" subtype="anchor" rel="noopener noreferrer" >
+    <div class="widget-overlay"></div>
+    <div id="czQHJ3MlkTUNOsl3UsLDb56h8lEdVDlg" class="widget widget-text">QUERO CONHECER E ME INSCREVER</div>
+</a><img id="qRwK2b7AmzIuISkutlL6nBnpGm4nkJm7"  width="1185" height="81"  class="widget widget-image" data-original="https://images.assets-landingi.com/r9ilM3UZ/faixa.png" src="https://images.assets-landingi.com/X8fXlwhZgqfuGwJ9/faixa.png" srcset="https://images.assets-landingi.com/X8fXlwhZgqfuGwJ9/faixa.png 1x, https://images.assets-landingi.com/r9ilM3UZ/faixa.png 2x"  alt="" ><img id="vTW04Milv2dZyc0LbTxJFPSxpCo09wx6"  width="603" height="104"  class="widget widget-image" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/hWRXCAXPioJpE8J0/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/hWRXCAXPioJpE8J0/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><div id="GubT8202DPairp6yTteDyDnTGMcFpVox" class="widget widget-text contato@agenciametadesign.com"><p><span style="color: rgb(255, 255, 255);">**<i style="font-weight: bold;">Aviso!</i> 98,7% das pessoas que assistem este vídeo não conseguem chegar até o fim, porque falta <b style="">foco</b> e <b style="">concentração</b></span></p></div>
+        </div>
+    </div>
+</div>
+<div id="l0wxkT9bA977qSZG4PUHIuhxDgkJzTU1" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="J119BaIpgkLoa1oW6DHoTOZsy83sElAT" class="widget widget-text"><p><font color="#ffffff">Receba diariamente análises do mercado de trading esportivo diretamente no seu celular.</font></p><p><font color="#ffffff"><br></font></p><p><font color="#ffffff">Apenas copie e cole nossos sinais e lucre com poucos cliques. Sem perder tempo analisando, sem se preocupar em assistir esportes, sem precisar conhecer sobre o mercado e de qualquer lugar, sem sequer precisar sair de casa. </font></p><p><font color="#ffffff"><br></font></p><p><font color="#ffffff">Temos uma equipe especializada em fazer todo o trabalho de análises e enviar as melhores oportunidades de lucro na corretora.</font></p><p><font color="#ffffff"><br></font></p></div><img id="lRRWsTeaE35WlyAHbi9zhSaa9h5MPGl1"  width="79" height="24"  class="widget widget-image wow pulse" data-original="https://images.assets-landingi.com/klYOAT6n/pontinho.png" src="https://images.assets-landingi.com/ebNHtGSrLeMaXmRb/pontinho.png" srcset="https://images.assets-landingi.com/ebNHtGSrLeMaXmRb/pontinho.png 1x, https://images.assets-landingi.com/klYOAT6n/pontinho.png 2x"  alt="" ><img id="TasTz5O3baiyFoQhWaAdxxokkqH5BT6e"  width="412" height="440"  class="widget widget-image wow bounceInLeft" data-original="https://images.assets-landingi.com/NPYBIdit/30_308467_go_to_image_football_soccer_player_png.png" src="https://images.assets-landingi.com/74lzBmHusNYNz8OG/30_308467_go_to_image_football_soccer_player_png.png" srcset="https://images.assets-landingi.com/74lzBmHusNYNz8OG/30_308467_go_to_image_football_soccer_player_png.png 1x, https://images.assets-landingi.com/NPYBIdit/30_308467_go_to_image_football_soccer_player_png.png 2x"  alt="" ><img id="f7IS1v3KJpMMchTXa3Nmdz1zb8UT1cX3"  width="439" height="119"  class="widget widget-image" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/D4eoVAuIaFtjW9Ry/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/D4eoVAuIaFtjW9Ry/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><div id="zN5N4JGDtGJS9kqhroAvctnR1UnMEin3" class="widget widget-text"><p><font color="#ffffff">como funciona o futmilionário</font></p></div>
+        </div>
+    </div>
+</div>
+<div id="sBUFJht0DkTKUiN3dkd7D7lDrG9n8Jx9" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="XgHOHbGRg5FUZcUXHz9rXGRSp2n06qPI" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">Lucre em poucos minutos</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">100% pelo seu celular</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">De onde estiver</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Pouquíssimo investimento inicial</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Cancele quando quiser</span></p><p><font color="#ffffff"><br></font></p></div><i id="diXAIHMZhmyv1rQIJ7nbOT5rcX2B4ni8" class="fa fa-check-circle widget widget-icon"></i><i id="RulsWs36ynDMqimBF5XZeG5p5RxDQt9m" class="fa fa-check-circle widget widget-icon"></i><i id="bf0PFeBSPZPTi9Vp6UbZ3xVWtqubdDyS" class="fa fa-check-circle widget widget-icon"></i><i id="wggnuMuZV8wp5BdESs9TLSMECDlPKmfx" class="fa fa-check-circle widget widget-icon"></i><img id="y11X5zWkikvpM6APIKJPN8txFDNy4W2O"  width="235" height="386"  class="widget widget-image" data-original="https://images.assets-landingi.com/MSeD0mWy/mockup_cel.png" src="https://images.assets-landingi.com/SWNCtmVjXD6SqDpw/mockup_cel.png" srcset="https://images.assets-landingi.com/SWNCtmVjXD6SqDpw/mockup_cel.png 1x, https://images.assets-landingi.com/MSeD0mWy/mockup_cel.png 2x"  alt="" ><i id="SDAIyahpqWXdI0RUqmybPavAHd0Kv3kT" class="fa fa-check-circle widget widget-icon"></i><div id="FaW9kIV9H7pUQLA3LZzzClE4rGdEEVsH" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">Lucre em poucos minutos</span></p><p><br></p><p><font color="#ffffff"><br></font></p></div><div id="wPMwiLmiPD5qAyUDPb18pJ0DETqp50TK" class="widget widget-text"><p><br></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">100% pelo seu celular</span></p><p><br></p><p><font color="#ffffff"><br></font></p></div><div id="uu9UAk5ZDJMrQssndPcIG0WTBnnCyKUt" class="widget widget-text"><p><br></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Cancele quando quiser</span></p><p><font color="#ffffff"><br></font></p></div><div id="X8bRzAiSxFRTcTLOnzPpNJwJOXahvDco" class="widget widget-text"><p><br></p><p><span style="color: rgb(255, 255, 255);">Pouquíssimo investimento inicial</span></p><p><br></p></div><div id="Ib4wa2NcbPbqfFS7LHBTRwfBpTQoFpKe" class="widget widget-text"><p><br></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">De onde estiver</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><br></p></div>
+        </div>
+    </div>
+</div>
+<div id="U0OrnibPrhA8LJFpzNyKywKemqw19koD" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="FFCf3LHiIKL0OZMl2P6cwB8OkMhxB7gR"  width="907" height="70"  class="widget widget-image" data-original="https://images.assets-landingi.com/PhqpcuvW/setas.png" src="https://images.assets-landingi.com/b9Qz2kCfb2whZICo/setas.png" srcset="https://images.assets-landingi.com/b9Qz2kCfb2whZICo/setas.png 1x, https://images.assets-landingi.com/PhqpcuvW/setas.png 2x"  alt="" ><div id="hmggMcXP77OMUkbmwCPptzf3sZyeVdeF" class="widget widget-text wow bounceInLeft"><p><span style="color: rgb(255, 255, 255);">O QUE VOCÊ VAI RECEBER NO FUTMILIONÁRIO?</span></p></div><div id="WR3ZB6dPhZ3hmbP9RzCpkZS8ia8nRU4N" class="widget widget-text"><p><span style="color: rgb(0, 255, 18); font-style: italic; text-decoration-line: underline; font-weight: bold;">GRUPO EXCLUSIVO DE ANÁLISE ESPORTIVA </span></p><p><span style="font-style: italic; text-decoration-line: underline; color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Acesso ao nosso grupo com análises diárias para você operar com poucos cliques. </span></p></div><div id="IlFCJtdRtSl2D2dDpf54nx8x9iP0TQhx" class="widget widget-text"><p><span style="color: rgb(0, 255, 18); font-style: italic; text-decoration-line: underline; font-weight: bold;">CURSO 100% ATUALIZADO COM TODAS AS ESTRATÉGIAS QUE USAMOS NO MERCADO.</span></p><p><span style="font-style: italic; text-decoration-line: underline; color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Mais de 10 módulos estruturados para que você saia do zero ou de onde estiver, conheça as nossas estratégias internas de mercado e tenha resultados expressivos dentro do mercado através das nossas análises. </span></p></div><img id="R1aysblrVS6CJKTnTMvMagzJsFhKOmQz"  width="685" height="408"  class="widget widget-image" data-original="https://images.assets-landingi.com/LY6OUtcq/raphael_mockup.png" src="https://images.assets-landingi.com/n1onjEIeZ2Rr8oWz/raphael_mockup.png" srcset="https://images.assets-landingi.com/n1onjEIeZ2Rr8oWz/raphael_mockup.png 1x, https://images.assets-landingi.com/LY6OUtcq/raphael_mockup.png 2x"  alt="" ><div id="MkZLnqKZTgfLAn1m4ETItrHtWCAiZg3x" class="widget widget-text"><p><span style="color: rgb(0, 255, 18); font-style: italic; text-decoration-line: underline; font-weight: bold;">LIVES SEMANAIS COM RAPHAEL PORTES</span></p><p><span style="color: rgb(0, 255, 18); font-style: italic; text-decoration-line: underline;"><br></span></p><p><span style="color: rgb(255, 255, 255);">Lives semanais exclusivas com Operações ao Vivo, Estratégias de Mercado, Gestão Milionária a como fazer o trader esportivo altamente lucrativo com Raphael Portes.</span></p></div><div id="sTBa5HHLKryanAxkPBbZqIUDMKXiiFls" class="widget widget-text"><p><span style="color: rgb(0, 255, 18); font-style: italic; text-decoration-line: underline; font-weight: bold;">ACESSO AO SUPORTE DIRETAMENTE COM TRADER</span></p><p><span style="color: rgb(0, 255, 18); font-style: italic; text-decoration-line: underline;"><br></span></p><p><span style="color: rgb(255, 255, 255);">Para te ajudar com tudo o que precisa, suporte exclusivo para os membros VIP diretamente com nossos especilistas da bolsa esportiva. </span></p></div><i id="DlQwZoTeMMFMd3CIsOtwRT1D5o9PuLbp" class="fa fa-chevron-right widget widget-icon"></i><i id="FEOIElA2A6GrlOr8svf3JqgWFXiSF6JS" class="fa fa-chevron-right widget widget-icon"></i><i id="Tim0QPrWZMD8IGvIMDe7hTfiU2emwPht" class="fa fa-chevron-right widget widget-icon"></i><i id="UxipAyEWFVCOiFMQSFxT69p850hw64eX" class="fa fa-chevron-right widget widget-icon"></i>
+        </div>
+    </div>
+</div>
+<div id="evADLhnI41ULX5zvMUKZymb7OsmXvIMt" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="lTS6sa0puLfXnPss5f1FGrGRpmZDMPQW"  width="423" height="410"  class="widget widget-image" data-original="https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png" src="https://images.assets-landingi.com/MuhfL9Gh61KTuSnw/LOGO_FUTMILIONARIO_03.png" srcset="https://images.assets-landingi.com/MuhfL9Gh61KTuSnw/LOGO_FUTMILIONARIO_03.png 1x, https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png 2x"  alt="" ><div id="msPWbK0Nu7vpXbFvDedM6HnM7hCAZXfw" class="widget widget-text"><p>A maior e mais especializada consultoria de Trader Esportivo do Mundo.</p><p><br></p><p>Os melhores Analistas do mercado de Trader esportivo te enviando análises e sugestões de aposta todos os dias diretamente no seu celular, para que você apenas copie, cole e fature com poucos cliques, de forma simples e fácil.</p></div><img id="XCHbSQGvIqH7o3ifLOg8A6cU1fOpmNaE"  width="432" height="79"  class="widget widget-image wow bounceInLeft" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/Xx5tfCPX2jibh0nF/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/Xx5tfCPX2jibh0nF/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><div id="axW1wnxODcRoVqwExg4r9ia9TQE1B9Bk" class="widget widget-text wow bounceInLeft"><p>futmilionário?</p></div><div id="cklg9bNLwIglTGQaso2SxxLRJpIGCp4P" class="widget widget-text wow bounceInLeft"><p>o que é</p></div>
+        </div>
+    </div>
+</div>
+<div id="K4o5vWpC1adZEMsTviiO7imRxMmKztfu" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="oxuocAIl5Kdc0VnwoWOy0ZoiOPafHgm2"  width="907" height="70"  class="widget widget-image" data-original="https://images.assets-landingi.com/PhqpcuvW/setas.png" src="https://images.assets-landingi.com/pBJvmfuNduSG8rKm/setas.png" srcset="https://images.assets-landingi.com/pBJvmfuNduSG8rKm/setas.png 1x, https://images.assets-landingi.com/PhqpcuvW/setas.png 2x"  alt="" ><div id="kdMa8zD9bFdRJB94MLWW8SNUru0Kka20" class="widget widget-text wow bounceInLeft"><p><span style="color: rgb(255, 255, 255);">O QUE DIZEM NOSSOS membros</span></p></div><div id='urMcdyrqciHrR6V0BSZQQT715C0xHMyF' data-vimeo-url='https://vimeo.com/436500242' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('urMcdyrqciHrR6V0BSZQQT715C0xHMyF', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='iFZc5c4GKqrnA9F8vQXLshVHyKdTX6Vl' data-vimeo-url='https://vimeo.com/436502946' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('iFZc5c4GKqrnA9F8vQXLshVHyKdTX6Vl', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='B274BGx4fknU9bQAvMJ2kEwZW2yN0iTl' data-vimeo-url='https://vimeo.com/437154887' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('B274BGx4fknU9bQAvMJ2kEwZW2yN0iTl', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='vpkMblnTI4UTWE8FgfKSIxiR1177yaBQ' data-vimeo-url='https://vimeo.com/437155049' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('vpkMblnTI4UTWE8FgfKSIxiR1177yaBQ', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='M2TnOABB5b6kBTVazBxu7Nz1HkTKUEGh' data-vimeo-url='https://vimeo.com/438228643' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('M2TnOABB5b6kBTVazBxu7Nz1HkTKUEGh', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><div id='eF0UtD9FzQvCHQ8gLHgXle46C5fvoCQS' data-vimeo-url='https://vimeo.com/437155020' allowfullscreen></div>
+<script>
+(function () {
+    var options = {
+        background : !1,
+        loop : 0,
+        title : 0,
+        responsive: true
+    };
+    var player = new Vimeo.Player('eF0UtD9FzQvCHQ8gLHgXle46C5fvoCQS', options);
+    
+    player.ready().then(function() {
+      if (!!0) {
+          player.play();
+      }
+      
+      if (!!0) {
+          player.setVolume(0);
+      } else {
+          player.setVolume(1);
+      }
+    });
+})()
+</script><img id="lcH6tsSiAw3sz9axPa7pGT2oST0EgCuN"  width="778" height="104"  class="widget widget-image" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/Zjk2IIMFahGNTkqg/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/Zjk2IIMFahGNTkqg/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><a href="#Zwgf20boqOBWFTGb5XZTMRpfTqxKznZ3" id="caDUU8grZXasH9k1dxrCDRFHvM3wcPgH" class="widget widget-button wow bounceInLeft"  version="3" subtype="anchor" rel="noopener noreferrer" >
+    <div class="widget-overlay"></div>
+    <div id="EXf3uxQgaiz8wcHKDt7dOESry1E1Hmb6" class="widget widget-text">SIM, EU QUERO LUCRAR COM O FUTMILION&Aacute;RIO</div>
+</a>
+        </div>
+    </div>
+</div>
+<div id="VpdUGwy84LiblmyQ8zFPzEAdnPobsIOz" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="mZc7alHlW6GHT1EX0vgeyr53AJ9HG3pV" class="widget widget-text wow bounceInLeft"><p><span style="color: rgb(255, 255, 255);">Quem vai te ajudar </span></p><p><span style="color: rgb(255, 255, 255);">no mercado?</span></p></div><img id="w5UGqUDxrto8RM1Ce2ZV6JuLTL9xTaU4"  width="389" height="104"  class="widget widget-image wow bounceInLeft" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/KaHDGIJID63Dsz6T/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/KaHDGIJID63Dsz6T/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><div id="cBbOzxxxHMTJAf3Ho4nL11UfIiekMAh2" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">Ronald Lopes, 27 anos de idade.</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Ex vendedor de sacolé, funcionário de lava-jato, panfleteiro e ex motorista de aplicativo criou a maior consultoria de Trader Esportivo do Brasil e faturou mais de 57 milhões de reais através da Internet entre 2019 e 2020.</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Hoje, especialista em fontes de renda através da Internet, vai te ajudar a faturar através do Trader Esportivo no FUTMILIONÁRIO.</span></p><p><br></p><p><br></p><p><br></p></div><img id="P4BpPVKOo6rHKZUNSJPV2wt6oUIRWG1v"  width="353" height="472"  class="widget widget-image wow pulse" data-original="https://images.assets-landingi.com/2nikro5p/foto_ronald.png" src="https://images.assets-landingi.com/vHWOELAbuFhLIz7x/foto_ronald.png" srcset="https://images.assets-landingi.com/vHWOELAbuFhLIz7x/foto_ronald.png 1x, https://images.assets-landingi.com/2nikro5p/foto_ronald.png 2x"  alt="" >
+        </div>
+    </div>
+</div>
+<div id="Ug40QZG4CK6Q4SocZ9vWnDaqQ0J01Prt" class="widget widget-section ">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="Rpss6VtsTVthSpmaLnkmiG08eW1Tl0LB" class="widget widget-text contato@agenciametadesign.com"><p><span style="color: rgb(255, 255, 255);">FutMilionário na Mídia </span></p></div><div id="gaPGPMTwHRV0fBuAc1UK4OgWc6tTI4v9" class="widget widget-text fe-pulse-w-pause"><p><span style="font-weight: bold;"><u>Neymar</u> Aconselha Ronald a Esquecer os Haters e Seguir em Frente</span></p></div><img id="SZPfwB9NK6quEhrpsLAdvx2uFW2GnZQy"  width="468" height="270"  class="widget widget-image" data-original="https://images.assets-landingi.com/fDOLA8ay/WhatsApp_Image_2020_08_19_at_22.42.04.jpeg" src="https://images.assets-landingi.com/j2yVCDzc39GlrxT7/WhatsApp_Image_2020_08_19_at_22.42.04.jpeg" srcset="https://images.assets-landingi.com/j2yVCDzc39GlrxT7/WhatsApp_Image_2020_08_19_at_22.42.04.jpeg 1x, https://images.assets-landingi.com/fDOLA8ay/WhatsApp_Image_2020_08_19_at_22.42.04.jpeg 2x"  alt="" ><div id="SGyMducrWg8HwXJ1s035POVGFyaahAGN" class="widget widget-box"></div><div id="ScgEMQrMK8TAFh6Gvf9tUrPLDoM8x5iB" class="widget widget-text fe-pulse-w-pause"><p><span style="font-weight: 700;">Entrevista para o <u>Jornal O Globo</u></span></p></div><div id="y4aK2lFrdR9ntig6ut74umMd0sqgHiRQ" class="widget widget-box"></div><img id="gxLZ2coGtPGMlVPze8Ao79O20FynVHkQ"  width="335" height="609"  class="widget widget-image" data-original="https://images.assets-landingi.com/yEAUO3ZH/WhatsApp_Image_2020_08_19_at_22.38.50.jpeg" src="https://images.assets-landingi.com/F0GmOp21PWLAkbhe/WhatsApp_Image_2020_08_19_at_22.38.50.jpeg" srcset="https://images.assets-landingi.com/F0GmOp21PWLAkbhe/WhatsApp_Image_2020_08_19_at_22.38.50.jpeg 1x, https://images.assets-landingi.com/yEAUO3ZH/WhatsApp_Image_2020_08_19_at_22.38.50.jpeg 2x"  alt="" ><div id="WvP9EFTUpsHTgGRNeXTCSPEzAgp1fD64" class="widget widget-text fe-pulse-w-pause"><p><span style="font-weight: 700;"><u>Bettina</u> da Empiricus Me Parabeniza Pelo Primeiro Milhão </span></p></div><img id="V2X2C3B3D26m2FrOBWmlU6w9c33XfP4A"  width="468" height="388"  class="widget widget-image" data-original="https://images.assets-landingi.com/XtMn17Ju/WhatsApp_Image_2020_08_19_at_22.38.09.jpeg" src="https://images.assets-landingi.com/KCcFkWzyD3NlrjiB/WhatsApp_Image_2020_08_19_at_22.38.09.jpeg" srcset="https://images.assets-landingi.com/KCcFkWzyD3NlrjiB/WhatsApp_Image_2020_08_19_at_22.38.09.jpeg 1x, https://images.assets-landingi.com/XtMn17Ju/WhatsApp_Image_2020_08_19_at_22.38.09.jpeg 2x"  alt="" ><div id="Tt9z6wTNOTmaPQQJP9AXDpRdTIMzM1m4" class="widget widget-box"></div>
+        </div>
+    </div>
+</div>
+<div id="Jbhy6Lyhy7HegnQh6Jsp4tHggQGr5Udl" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="IqRlU3vm5D4pZaEiew5t8m1DyocHHqGI" class="widget widget-box"></div><div id="cf5kv06TXmqZZUwALm6VpCT45ryuN2vt" class="widget widget-box wow bounceInLeft"></div><div id="TGlQJ2KaK7AAQzTKhSzlFwozakwc81ok" class="widget widget-box"></div><div id="vTGn8ZQTB0geoCDmcCEu11IKP2eIRTtr" class="widget widget-box wow bounceInUp"></div><img id="PnPBIc5xv8dW1K0xZMXawQIBa8ZAD3Tp"  width="63" height="38"  class="widget widget-image" data-original="https://images.assets-landingi.com/OjIwlF4Q/TYY.png" src="https://images.assets-landingi.com/iytb5Swt8rM913Vx/TYY.png" srcset="https://images.assets-landingi.com/iytb5Swt8rM913Vx/TYY.png 1x, https://images.assets-landingi.com/OjIwlF4Q/TYY.png 2x"  alt="" ><div id="L6fMasbg6Z0qxyiG4kEWsdMJy7cOQtgn" class="widget widget-text contato@agenciametadesign.com"><p>Liderados por Rapha Portes e Ronald Lopes, a equipe de analistas do FutMilionário reúne os melhores traders esportivos do Brasil e do Mundo.</p><p><br></p><p>Com estrutura única e 100% profissional, a equipe traz resultados positivos, consistência e Lucratividade, sendo responsáveis por fazerem com que o FUTMILIONÁRIO nunca tenha terminado um mês negativo em toda a sua história. </p></div><div id="ohFMxrZ227nDxnsg5hwgGl4TIcK3ldOb" class="widget widget-text contato@agenciametadesign.com"><p><span style="color: rgb(255, 255, 255);">Equipe Futmilionário</span></p></div><div id="eZpZkgmDR2UtAR8ZhPU0FnQFkZWMOQoD" class="widget widget-box wow bounceInUpwow bounceInUp"></div><img id="CUH6i6UgqITiKBHbMBxy81cdczXhQAUk"  width="130" height="130"  class="widget widget-image wow flash" data-original="https://images.assets-landingi.com/FD5mbCGI/bola.png" src="https://images.assets-landingi.com/BFhfkKCrHDUBiqjH/bola.png" srcset="https://images.assets-landingi.com/BFhfkKCrHDUBiqjH/bola.png 1x, https://images.assets-landingi.com/FD5mbCGI/bola.png 2x"  alt="" >
+        </div>
+    </div>
+</div>
+<div id="aZMOKozMLfUyvVtTVToxTGUJ1zEsEJnq" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="ISFICgMR64z7n4iwheMUThkvIdNNITla" class="widget widget-text wow bounceInLeft"><p>Se inscrevendo agora no FutMilionário, você <span style="color: rgb(25, 255, 0);">leva como bônus</span> o acesso ao nosso grupo DIVERSOS </p><p>com mais opções de lucro e análises em outros<span style="color: rgb(46, 255, 0);"> </span><span style="color: rgb(25, 255, 0);">diversos mercados</span>:</p></div><div id="NEaOdzEH5yUdyN6qa9xhNXvQ9LLEq42L" class="widget widget-text wow bounceInLeft"><p>Basquete </p></div><div id="Ou77IFch2koyTlvsFJIRFTZwb33Kfvti" class="widget widget-text wow bounceInLeft"><p><span style="color: rgb(255, 255, 255);">E para aumentar ainda mais as suas </span></p><p><span style="color: rgb(25, 255, 0);">possibilidades de lucro</span><span style="color: rgb(255, 255, 255);">…</span></p></div><img id="adNsdx0CA0TVB0bQoesr9WUhUxFcq6DZ"  width="146" height="146"  class="widget widget-image" data-original="https://images.assets-landingi.com/BZugNkEU/baquete.png" src="https://images.assets-landingi.com/4MeLSAeK6PIpyyoB/baquete.png" srcset="https://images.assets-landingi.com/4MeLSAeK6PIpyyoB/baquete.png 1x, https://images.assets-landingi.com/BZugNkEU/baquete.png 2x"  alt="" ><img id="Jmf7zJVUueCWSoMHXikUkfFvIIaTgKll"  width="145" height="145"  class="widget widget-image" data-original="https://images.assets-landingi.com/RuJITk1T/ping.png" src="https://images.assets-landingi.com/m1jSEdc2165QlRR1/ping.png" srcset="https://images.assets-landingi.com/m1jSEdc2165QlRR1/ping.png 1x, https://images.assets-landingi.com/RuJITk1T/ping.png 2x"  alt="" ><div id="XCNh6KTN7Cp6KTgmM79JJT6TLV6AckdD" class="widget widget-text wow bounceInLeft"><p>tênis de mesa</p></div><img id="aelu6SrpwptNgJnW5S2pn5DJhPTWktgB"  width="145" height="145"  class="widget widget-image" data-original="https://images.assets-landingi.com/IVNj4xTM/tenis.png" src="https://images.assets-landingi.com/04S1nzukqIJaRfNd/tenis.png" srcset="https://images.assets-landingi.com/04S1nzukqIJaRfNd/tenis.png 1x, https://images.assets-landingi.com/IVNj4xTM/tenis.png 2x"  alt="" ><div id="n3ydfiPv5RGhT7DrkU5oKgtkRGnXQxRu" class="widget widget-text wow bounceInLeft"><p>tênis</p></div>
+        </div>
+    </div>
+</div>
+<div id="N2fJTfRnSb3OTZSETTP1UF3RBEDcT4to" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="sugIQc5sTXkFaUuiqrCfG6GNS6818iuL"  width="907" height="70"  class="widget widget-image" data-original="https://images.assets-landingi.com/PhqpcuvW/setas.png" src="https://images.assets-landingi.com/pBJvmfuNduSG8rKm/setas.png" srcset="https://images.assets-landingi.com/pBJvmfuNduSG8rKm/setas.png 1x, https://images.assets-landingi.com/PhqpcuvW/setas.png 2x"  alt="" ><div id="o9BFsy3ZEpxgaagAVFSG7epG5J5VIG03" class="widget widget-text wow bounceInLeft"><p>SE LIGA NESSES</p><p>RESULTADOS!</p></div><img id="Lc8dIDWFKiD52TPMLrXOd23Xp8KcE6C8"  width="320" height="726"  class="widget widget-image" data-original="https://images.assets-landingi.com/Yftqq6PZ/8d2483ad_8f82_4535_b63f_29d146105fb5.jpg" src="https://images.assets-landingi.com/mMPzSj8JSlUph2rT/8d2483ad_8f82_4535_b63f_29d146105fb5.jpg" srcset="https://images.assets-landingi.com/mMPzSj8JSlUph2rT/8d2483ad_8f82_4535_b63f_29d146105fb5.jpg 1x, https://images.assets-landingi.com/Yftqq6PZ/8d2483ad_8f82_4535_b63f_29d146105fb5.jpg 2x"  alt="" ><img id="zOBhXi36eg3fHEHTzir7ChcLtUBviLhE"  width="320" height="711"  class="widget widget-image" data-original="https://images.assets-landingi.com/OTRMVQYq/bf0255d4_8542_43d6_b7c4_5ebb241d1aa7.jpg" src="https://images.assets-landingi.com/8vTYIzRj4YcKfvaa/bf0255d4_8542_43d6_b7c4_5ebb241d1aa7.jpg" srcset="https://images.assets-landingi.com/8vTYIzRj4YcKfvaa/bf0255d4_8542_43d6_b7c4_5ebb241d1aa7.jpg 1x, https://images.assets-landingi.com/OTRMVQYq/bf0255d4_8542_43d6_b7c4_5ebb241d1aa7.jpg 2x"  alt="" ><img id="X3Kvzls4CblNtSyVKAWfASU7IquiJdze"  width="320" height="709"  class="widget widget-image" data-original="https://images.assets-landingi.com/Z8BhTA6K/WhatsApp_Image_2020_07_08_at_10.09.24.jpeg" src="https://images.assets-landingi.com/dBTaxVYtkrt8Rvc0/WhatsApp_Image_2020_07_08_at_10.09.24.jpeg" srcset="https://images.assets-landingi.com/dBTaxVYtkrt8Rvc0/WhatsApp_Image_2020_07_08_at_10.09.24.jpeg 1x, https://images.assets-landingi.com/Z8BhTA6K/WhatsApp_Image_2020_07_08_at_10.09.24.jpeg 2x"  alt="" ><img id="fP5zLd5HPJ8Tx1HTCz7bF07oUBizw8M3"  width="261" height="567"  class="widget widget-image" data-original="https://images.assets-landingi.com/c3MP4JQP/3bda8745_82cf_4151_b3ef_125162a9078b.jpg" src="https://images.assets-landingi.com/OQPLAQkmDSg59Ny3/3bda8745_82cf_4151_b3ef_125162a9078b.jpg" srcset="https://images.assets-landingi.com/OQPLAQkmDSg59Ny3/3bda8745_82cf_4151_b3ef_125162a9078b.jpg 1x, https://images.assets-landingi.com/c3MP4JQP/3bda8745_82cf_4151_b3ef_125162a9078b.jpg 2x"  alt="" >
+        </div>
+    </div>
+</div>
+<div id="Zwgf20boqOBWFTGb5XZTMRpfTqxKznZ3" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="eNa4nPSpUbr9yvxahvmm4qbvwKn05u47" class="widget widget-text wow bounceInLeft"><p><span style="color: rgb(255, 255, 255);">escolha seu plano:</span></p></div><div id="kGhSZouSTWFKgMw7OgNVcM4DqXx2nXSM" class="widget widget-text wow pulse"><p>plano mensal</p></div><div id="BDSuuWX3G5Tyhhv8O8hWG9dTBlLlN0aX" class="widget widget-box"></div><div id="cQNmAJXqXDzW7gSLrCoCX6oh7PhebhpI" class="widget widget-text"><p><strike>adesão DE R$297,00 </strike></p></div><div id="DaczAaoJTUez4ggX28s9mGGUHc2fA0fT" class="widget widget-text wow bounceInDown"><p><span style="color: rgb(21, 192, 3);">R$197,00</span></p></div><div id="FR83efgKMie2Ttxp5wkGqTQxJO8KdGJz" class="widget widget-text wow pulse"><p>a partir do segundo mês</p><p><span style="color: rgb(21, 192, 3);"> </span><span style="background-color: transparent;"><span style="color: rgb(21, 192, 3);"> r$100,00 </span>mensal</span></p></div><img id="gOnzheE9eT3y3LsA7RN1BffNhgdFSwT8"  width="481" height="97"  class="widget widget-image" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/8K3ayNh1DDp4b63B/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/8K3ayNh1DDp4b63B/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><a href="/button/x2VttVcF3ASAnn3ons159TKvTASaTn9X" id="x2VttVcF3ASAnn3ons159TKvTASaTn9X" class="widget widget-button"  version="3" target="_blank" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/DXF107088?src=pv-galo-mensal">
+    <div class="widget-overlay"></div>
+    <div id="Q5GKCnJU4eTzgsFlJIAdzkEaby6rkT16" class="widget widget-text">QUERO COMPRAR AGORA</div>
+</a><a href="/button/hp6wU4BVJLlgcdy1lLbHeZ7qVCrcKkgt" id="hp6wU4BVJLlgcdy1lLbHeZ7qVCrcKkgt" class="widget widget-button"  version="3" target="_blank" rel="noopener noreferrer" data-target-url="https://app.monetizze.com.br/checkout/DJR107099?src=pv-galo-trimestral">
+    <div class="widget-overlay"></div>
+    <div id="VgAINzrNXhdnxtMelFfrL0llD1C90cGK" class="widget widget-text">QUERO COMPRAR AGORA</div>
+</a><div id="tIT1UOEudzOXUCOIKepKRsucTcsiXgJr" class="widget widget-text wow pulse"><p>compra 100% segura</p></div><img id="KeT173ExLNr820GkrEmd0PEaVnZqryH3"  width="321" height="60"  class="widget widget-image" data-original="https://images.assets-landingi.com/EizSZ9CL/2.png" src="https://images.assets-landingi.com/nFUpLNlwypZLI00s/2.png" srcset="https://images.assets-landingi.com/nFUpLNlwypZLI00s/2.png 1x, https://images.assets-landingi.com/EizSZ9CL/2.png 2x"  alt="" ><div id="WVcW3dekQ7lDmO7l4TcCOgzse4urrA6M" class="widget widget-text wow bounceInDown"><p><span style="color: rgb(21, 192, 3);">por:</span></p></div><div id="uJoLVhwPCgc3B8JvGJlGlLUMlHGR5Zxk" class="widget widget-text wow pulse"><p>plano trimestral</p></div><div id="DEpcdv7Te4s1bkgsJJylTnRI7aftG0t0" class="widget widget-box"></div><div id="JXy08mcSQBJvXrn31bgD0vTsOGstSHzL" class="widget widget-text"><p><strike>adesão DE R$891,00 </strike></p></div><div id="vSR3RSkdF24zAQptob5aVP6LpypsxCGv" class="widget widget-text wow bounceInDown"><p><span style="color: rgb(21, 192, 3);">R$297,00</span></p></div><div id="KyiVo1Xk4wTR9OFETO0Fh7S8p4BfU1WB" class="widget widget-text wow pulse"><p>a partir do <span style="color: rgb(21, 192, 3);">quarto mês</span> </p><p>renovação automática de  <span style="color: rgb(21, 192, 3); background-color: transparent;">r$297,00 </span></p></div><img id="fgPK7WSMZ81OiBIepMeePJVZSCaIG93p"  width="481" height="97"  class="widget widget-image" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/8K3ayNh1DDp4b63B/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/8K3ayNh1DDp4b63B/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><div id="BcXsoIC3SHrrLJVdhxIV7TE8crU9cOQZ" class="widget widget-text wow pulse"><p>compra 100% segura</p></div><img id="xteICrvIBRSktdvzQfPTBod45aAGsXdd"  width="321" height="60"  class="widget widget-image" data-original="https://images.assets-landingi.com/EizSZ9CL/2.png" src="https://images.assets-landingi.com/YjFuOJ8DNQrtRU9B/2.png" srcset="https://images.assets-landingi.com/YjFuOJ8DNQrtRU9B/2.png 1x, https://images.assets-landingi.com/EizSZ9CL/2.png 2x"  alt="" ><div id="CLBZ1AfmSt5GPFo6brxuZC1wtn4shf23" class="widget widget-text wow bounceInDown"><p><span style="color: rgb(21, 192, 3);">por:</span></p></div><div id="Ebo2VHT69ToqXC538opap5ghmPqwDJVl" class="widget widget-text wow pulse"><p>compra 100% segura</p></div>
+        </div>
+    </div>
+</div>
+<div id="Ql7IWOmNeqSm9meziSqOvzGOCfUOs9bn" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="SATMgIEbdpqAziKT5c1yNETyZkoRl3Gm"  width="387" height="395"  class="widget widget-image" data-original="https://images.assets-landingi.com/sfDKkCU8/fita.png" src="https://images.assets-landingi.com/jKzmf2YAPuo3s7KH/fita.png" srcset="https://images.assets-landingi.com/jKzmf2YAPuo3s7KH/fita.png 1x, https://images.assets-landingi.com/sfDKkCU8/fita.png 2x"  alt="" ><img id="FKfhR2WT5SlF0nT38zyzCEJuXy4h3XBf"  width="298" height="251"  class="widget widget-image" data-original="https://images.assets-landingi.com/WVFrlbr7/7_dias_garantia.png" src="https://images.assets-landingi.com/0Cbp5pNwcq8Ez4VJ/7_dias_garantia.png" srcset="https://images.assets-landingi.com/0Cbp5pNwcq8Ez4VJ/7_dias_garantia.png 1x, https://images.assets-landingi.com/WVFrlbr7/7_dias_garantia.png 2x"  alt="" ><img id="LicKlpafZQk1pHPd2acWDVlGt8awvOT9"  width="699" height="268"  class="widget widget-image" data-original="https://images.assets-landingi.com/NnPp0ZoW/Rectangle_2.png" src="https://images.assets-landingi.com/Mk6vX3KvOT4vpuwH/Rectangle_2.png" srcset="https://images.assets-landingi.com/Mk6vX3KvOT4vpuwH/Rectangle_2.png 1x, https://images.assets-landingi.com/NnPp0ZoW/Rectangle_2.png 2x"  alt="" ><div id="yU34zvNQTT9mQQqLPZMegVO5ga2fXhS1" class="widget widget-text"><p><br></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Se em até 07 dias após se inscrever, você não lucrar ou quiser sair do grupo por qualquer que seja o motivo,</span></p><p><span style="color: rgb(255, 255, 255);"><br></span></p><p><span style="color: rgb(255, 255, 255);">Basta pedir o seu dinheiro de volta com poucos cliques em poucos minutos.</span></p></div><img id="Qp8Z6zftWq3gHpaAlM9RXG19O2357EtJ"  width="540" height="86"  class="widget widget-image wow bounceInLeft" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/WmbnaZP6kzB234cI/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/WmbnaZP6kzB234cI/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><a href="#Zwgf20boqOBWFTGb5XZTMRpfTqxKznZ3" id="msiWu7P6N97HkhpNJF8lsMT9ZDsJeUi5" class="widget widget-button wow bounceInLeft"  version="3" subtype="anchor" rel="noopener noreferrer" >
+    <div class="widget-overlay"></div>
+    <div id="gOxmdG8QJPGIf0IcPbfd6zeHn3VeNDPK" class="widget widget-text">QUERO COMPRAR AGORA</div>
+</a><div id="GsiiNv8NDHOX1UblO35WravG39CGT7Jr" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">Caso ainda esteja em dúvida, para te ajudar na sua decisão, nós te oferecemos 07 dias de garantia incondicional. </span></p></div>
+        </div>
+    </div>
+</div>
+<div id="zkrq60CSbfimOwTwrlTMw250AiJeOdJP" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="k6AKHtSv42GLWuCEtdiKXf48lZWdMD5d" class="widget widget-text fe-pulse-w-pause"><p><span style="color: rgb(255, 255, 255);">TEM ALGUMA DÚVIDA?</span></p></div><img id="TvVWdK4yRR6L75R4DCVe1ebZUzF3TC04"  width="540" height="86"  class="widget widget-image wow bounceInLeft" data-original="https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png" src="https://images.assets-landingi.com/sRTW5juXxJIPBl1m/Rounded_Rectangle_1_copy.png" srcset="https://images.assets-landingi.com/sRTW5juXxJIPBl1m/Rounded_Rectangle_1_copy.png 1x, https://images.assets-landingi.com/hobdfh8s/Rounded_Rectangle_1_copy.png 2x"  alt="" ><a href="/button/iC9vcLoCCETymrcwdUNcPeuGcDsZ5Mcx" id="iC9vcLoCCETymrcwdUNcPeuGcDsZ5Mcx" class="widget widget-button wow bounceInLeft"  version="3" rel="noopener noreferrer" data-target-url="https://wa.me/message/I74EP5Z7IA7EE1">
+    <div class="widget-overlay"></div>
+    <div id="QiRd82GDiwcIA2N6V065cwTIDslxTiOP" class="widget widget-text">CONVERSAR NO WHATSAPP</div>
+</a><div id="sM9TKdAAymH5eTykvzts61cs56PAZWB8" class="widget widget-text"><p>Clique no botão abaixo e converse com nosso especialista</p></div><img id="c7ZeWwBTeTW0MPCwOEQgA3n14Oiir19L"  width="79" height="79"  class="widget widget-image" data-original="https://images.assets-landingi.com/38T4BDEw/wpppng.png" src="https://images.assets-landingi.com/NfQdweA88tPB5lkB/wpppng.png" srcset="https://images.assets-landingi.com/NfQdweA88tPB5lkB/wpppng.png 1x, https://images.assets-landingi.com/38T4BDEw/wpppng.png 2x"  alt="" ><div id="RNwPHXvNp3qIyXpLDMHuySCwwAElFO7R" class="widget widget-html">
+    <div class="custom-html-value" style="position: relative"><div id="pop-whats-container" class="opened" style="display:none">
+<a href="#" class="pop-whats">
+<div class="pop-whats_icon">
+<div class="ball-red"></div>
+</div>
+</a>
+<div class="box-whats">
+<img class="pop-fechar" src="https://midiaronaldlopes.com.br/script/x-icon.svg">
+<div class="header">
+<div class="img-whats"><img src="https://instagram.frao1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/100964408_3755621231179187_6660996472206524416_n.jpg?_nc_ht=instagram.frao1-1.fna.fbcdn.net&_nc_ohc=9kSEHeKgRAwAX-da-xP&tp=1&oh=a0964607e14667835f7acf3baa1bd26d&oe=60335B12"></div>
+<h2 class="no-margin">Ronald Lopes</h2>
+<h3 class="no-margin">Responde em alguns minutos</h3>
+</div>
+<div class="content">
+<div class="text-content text-left source-sans-pro">
+<span class="nom-brv mb10">Ronald Lopes</span>
+<span class="wpp-loader d-none">
+<div class="wpp-typing-loader"></div>
+</span>
+<span class="wpp-text">
+Opa tudo bom?  <br> <br>
+Tem mais alguma dúvida? Me chama aqui no zap, bora conversar.
+</span>
+<span class="data-brv">agora</span>
+</div>
+</div>
+<div class="foot">
+<a class="btn-whats" target="_blank" href="https://api.whatsapp.com/send?phone=553183204950&text=Ol%C3%A1%20Ronald%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Futmilionario!">
+<span style="display: inline-block; vertical-align: middle;">
+<img style="width: 20px;" src="https://midiaronaldlopes.com.br/script/whats-logo.svg"></span>
+<span style="display: inline-block; vertical-align: middle; margin-left: 10px;">Chamar no Whatsapp</span>
+</a>
+</div>
+</div>
+</div></div>
+</div>
+        </div>
+    </div>
+</div>
+<div id="StaZu5ODQDPxKlDVgPKTW2k0NrCRKe9y" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="vG2STu5Cgwo0kK4dSJNXD2TZatGEVx8X" class="widget widget-text fe-pulse-w-pause"><p><span style="color: rgb(255, 255, 255);">FAQ</span></p></div>
+        </div>
+    </div>
+</div>
+<div id="Z3DvL20IUKTmO18KuGsTt8cbmzEO8DXO" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="o5Z9BZITaLp1PbZPh6ZOfBZO8xo2zpuJ" class="widget widget-box fe-pulse-w-pause"></div><img id="rH1OgpJMOg6b8Izm0S2b402SHTS5Hzck"  width="80" height="80"  class="widget widget-image slideTrigger" data-original="https://images.assets-landingi.com/FD5mbCGI/bola.png" src="https://images.assets-landingi.com/UgcyCLNxg4DLekU5/bola.png" srcset="https://images.assets-landingi.com/UgcyCLNxg4DLekU5/bola.png 1x, https://images.assets-landingi.com/FD5mbCGI/bola.png 2x"  alt="" ><div id="b7pIGDNGhbM7UE1TC4LHtUHfwZwALd7E" class="widget widget-text slideTrigger"><p>O pagamento é seguro?</p></div>
+        </div>
+    </div>
+</div>
+<div id="Wg4iOGH0OTXV25G0w1xATlrrkJ6Uy80S" class="widget widget-section slideSection">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="GrwN45y1wiK40aCse05OSiMGF0ZridqJ" class="widget widget-text"><p>O pagamento é 100% seguro e processado pela maior empresa de infoprodutos do Brasil</p></div>
+        </div>
+    </div>
+</div>
+<div id="cvgJBTaQgpiuUSvsH6tZsrMcpwguMRwn" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="CabQGcTpBGQ7UzLbIak8HRFpPBxQgIXD" class="widget widget-box fe-pulse-w-pause"></div><img id="HXNqZbXpSEIqi2RV8SvlWJUvlZhT4z6r"  width="80" height="80"  class="widget widget-image slideTrigger" data-original="https://images.assets-landingi.com/FD5mbCGI/bola.png" src="https://images.assets-landingi.com/ywvouMxsdVeWWV0j/bola.png" srcset="https://images.assets-landingi.com/ywvouMxsdVeWWV0j/bola.png 1x, https://images.assets-landingi.com/FD5mbCGI/bola.png 2x"  alt="" ><div id="KnPJBkE7xnStwimQ65WPWR6WirJoW5wp" class="widget widget-text slideTrigger"><p>Como vou ter acesso ao curso?</p></div>
+        </div>
+    </div>
+</div>
+<div id="Quu2kbBkt09NGwqCluMZTVb23NSTLEuq" class="widget widget-section slideSection">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="lJbKHsaTI7FQf68hr1Id5G7TSZUVuTHN" class="widget widget-text"><p>Na sua caixa de email, simples, rápido e fácil. Após a plataforma reconhecer o pagamento nós enviaremos todas as informações para o seu email.</p></div>
+        </div>
+    </div>
+</div>
+<div id="wZsydwuoaZi9iDIF71o2Q57NpVJBN6ky" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="Owy9CQXRIHL7F8rD1pZV96ANNDxzKgc0" class="widget widget-box fe-pulse-w-pause"></div><img id="WgLoC7JM8Qw5tuTyPyJem3L2hcS507Wd"  width="80" height="80"  class="widget widget-image slideTrigger" data-original="https://images.assets-landingi.com/FD5mbCGI/bola.png" src="https://images.assets-landingi.com/r7MHxPM7jTiCosTZ/bola.png" srcset="https://images.assets-landingi.com/r7MHxPM7jTiCosTZ/bola.png 1x, https://images.assets-landingi.com/FD5mbCGI/bola.png 2x"  alt="" ><div id="eFF3JoKDLz5iwLQDiTycMgKnkqaoyvZk" class="widget widget-text slideTrigger"><p>Como vou acessar as salas de sinais?</p></div>
+        </div>
+    </div>
+</div>
+<div id="rADPnt0qsrVf8Afpalh8g6WVkTKTBEzq" class="widget widget-section slideSection">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="i6sRsWmaNoO6hHSGSgApd9qxUnAffehD" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">Iremos te enviar todos os dados ao seu email, assim que o pagamento for reconhecido.</span></p></div>
+        </div>
+    </div>
+</div>
+<div id="eulwg1tM4wb2qNrFNozJFTVfpK0iCgzb" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="g8d9DTL5ygSdCHKQQ2qnA26oFot35MWK" class="widget widget-box fe-pulse-w-pause"></div><img id="rqztSMhiXGFOylOyXX7T4oOTLfdaB7rR"  width="80" height="80"  class="widget widget-image slideTrigger" data-original="https://images.assets-landingi.com/FD5mbCGI/bola.png" src="https://images.assets-landingi.com/9LQzNJyjVPHFNhn2/bola.png" srcset="https://images.assets-landingi.com/9LQzNJyjVPHFNhn2/bola.png 1x, https://images.assets-landingi.com/FD5mbCGI/bola.png 2x"  alt="" ><div id="RhaRdTh0gUbtT1FPNfGuoI5QaQQtKxwh" class="widget widget-text slideTrigger"><p>Preciso ter conhecimento para ganhar dinheiro?</p></div>
+        </div>
+    </div>
+</div>
+<div id="CPKlL6PfF3JXdd7xhEiHye7vzTNoitT2" class="widget widget-section slideSection">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="uKTATr8HO0KxqooQ8BulUFf1nM8y3Rvz" class="widget widget-text"><p>A única coisa que você precisa saber é como copiar e colar nossos sinais e isso nós ensinamos dentro do curso.</p></div>
+        </div>
+    </div>
+</div>
+<div id="Degk50kdEoErs1vTiM9USVplaxAEXOmT" class="widget widget-section fe-pulse-w-pause">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="VQXmBteKB6s1cPZNJtkaUexygqUK6R3p" class="widget widget-box fe-pulse-w-pause"></div><img id="TREzRSnbuHVH1P5e9RxyhVk23iXhoF6l"  width="80" height="80"  class="widget widget-image slideTrigger" data-original="https://images.assets-landingi.com/FD5mbCGI/bola.png" src="https://images.assets-landingi.com/21MJSfbEER3HfEyc/bola.png" srcset="https://images.assets-landingi.com/21MJSfbEER3HfEyc/bola.png 1x, https://images.assets-landingi.com/FD5mbCGI/bola.png 2x"  alt="" ><div id="v3B3Jl30kgiDZPe1F5N7yK1RLwdlf7Bz" class="widget widget-text slideTrigger"><p>Existe suporte para me responder e me ajudar?</p></div>
+        </div>
+    </div>
+</div>
+<div id="swkXhH9gkOipeAc25TbqATkWThU3rRTI" class="widget widget-section slideSection">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="aHJLUom6wXUg3tFPl606ZrTPC3U9ivRZ" class="widget widget-text"><p><span style="color: rgb(255, 255, 255);">Nós temos um canal de suporte direto ao trader, onde você irá poder fazer todo tipo de pergunta e questionamento.</span></p></div>
+        </div>
+    </div>
+</div>
+<div id="z5zVmw55n7S04A9AvI5Vfvnm93xVuLBh" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <div id="AFbNz0zzHwy9MZ7Na5TfrT7bKnxUABUd" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">FutMilionário® - Todos os direitos reservados.</span></p></div><div id="iTACnuLGdiHd8lbmppAoV3Sq1Ik6bWTd" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">TERMOS DE USO </span></p></div><div id="wNW1PsqPqkJhrAroEvnSRosAuIyOSIeB" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">POLÍTICAS DE PRIVACIDADE</span></p></div><img id="U0C3gdzTeqQovmRWJ59I7VivUP9AwDf1"  width="215" height="208"  class="widget widget-image" data-original="https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png" src="https://images.assets-landingi.com/StXO8UeSS41mEAbQ/LOGO_FUTMILIONARIO_03.png" srcset="https://images.assets-landingi.com/StXO8UeSS41mEAbQ/LOGO_FUTMILIONARIO_03.png 1x, https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png 2x"  alt="" >
+        </div>
+    </div>
+</div>
+<div id="yueR7y6o1ptI9E4hqyQQnQkrghqEbpJV" class="widget widget-section">
+    <div class="row">
+        
+        <div class="container">
+            
+            <img id="sw5CkZRLlklep9ruI7J2uhsz8DyktMKF"  width="206" height="200"  class="widget widget-image wow pulse" data-original="https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png" src="https://images.assets-landingi.com/T4aG29c3X6sbHNr2/LOGO_FUTMILIONARIO_03.png" srcset="https://images.assets-landingi.com/T4aG29c3X6sbHNr2/LOGO_FUTMILIONARIO_03.png 1x, https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png 2x"  alt="" ><div id="BhZnGDFdwZC2TGQhGBIx0rBodU8s22N3" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">FutMilionário® - Todos os direitos reservados.</span></p></div><div id="BWZwGNFV9s1l2NupLJWZ9g5GHGqCIEIB" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">TERMOS DE USO </span></p></div><div id="LzZ0x8SLNclMUt3BL8mIhzQTD1gJ9F5E" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">POLÍTICAS DE PRIVACIDADE</span></p></div><div id="MAtzUcf3sbaISJNwGMk2hJN13TeniCKP" class="widget widget-text wow pulse"><p><font color="#ffffff">Suporte é feito através do:</font></p></div><div id="HSm6DnzTuwCOgC5NlDTuizPLSTe1IRl0" class="widget widget-text wow pulse"><p><font color="#ffffff"><a href="https://t.me/futmilionariocadastro" target="_blank" style="color: rgb(25, 255, 0); text-decoration: none;">@futmilionariocadastro</a></font></p></div><div id="WlDcCncNKbTEHZii0eoEWaAGrDewdQUl" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">FutMilionário® - Todos os direitos reservados.</span></p></div><div id="w0rcHEMF23oRP5KIUQDLgLSsTVTP50lZ" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">Suporte é feito através do:</span></p></div><div id="Iu54FMXPnrcixyes9eIU42J5moxqkGLG" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);"><a href="https://t.me/futmilionariocadastro" target="_blank" style="color: rgb(0, 255, 18); text-decoration: none;">@futmilionariocadastro</a></span></p></div><div id="craLCfFVqGeQreraAVrB7NO3yckdgWpG" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">TERMOS DE USO</span></p></div><div id="SVp1q3ycqpL5pQcp9f7N02oIWrAZWPT4" class="widget widget-text wow pulse"><p><span style="color: rgb(255, 255, 255);">POLÍTICAS DE PRIVACIDADE</span></p></div><img id="E6yPQ24s6i44Eaf3dsv4Q98SHnDxJSR4"  width="593" height="575"  class="widget widget-image wow pulse" data-original="https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png" src="https://images.assets-landingi.com/RID2tNdy9JzFVihJ/LOGO_FUTMILIONARIO_03.png" srcset="https://images.assets-landingi.com/RID2tNdy9JzFVihJ/LOGO_FUTMILIONARIO_03.png 1x, https://images.assets-landingi.com/fcMP3CJX/LOGO_FUTMILIONARIO_03.png 2x"  alt="" ><div id="WXGLFoXt6oSA6RXM8a4brIUbEbopcFhM" class="widget widget-text wow pulse"><p><font color="#ffffff">Os resultados referentes ao serviço foram avaliados e comprovados por seus alunos. Não garantimos os resultados iguais para todos, estes variam de pessoa para pessoa dependendo de diversos fatores individuais. As informações fornecidas neste site destina-se ao seu conhecimento geral e não garantimos um resultado específico, e nem um valor exato de lucro, todo resultado será de inteira responsabilidade do aluno.</font></p></div><div id="eU8dzwzALyZBtt0NtDiteOxIwbcGSDTp" class="widget widget-text wow pulse"><p><font color="#ffffff">Os resultados referentes ao serviço foram avaliados e comprovados por seus alunos. Não garantimos os resultados iguais para todos, estes variam de pessoa para pessoa dependendo de diversos fatores individuais. As informações fornecidas neste site destina-se ao seu conhecimento geral e não garantimos um resultado específico, e nem um valor exato de lucro, todo resultado será de inteira responsabilidade do aluno.</font></p></div><div id="tXpP0vuf8Zn2h9HxgNXMM8WnfINox8zR" class="widget widget-text wow pulse"><p><font color="#ffffff">O valor do plano é cobrado automaticamente no cartão/boleto através da Monetizze.</font></p></div><div id="uoO45682dx7CpZVuceGNTDoeTeTtQb2v" class="widget widget-text wow pulse"><p><font color="#ffffff">O valor do plano é cobrado automaticamente no cartão/boleto através da Monetizze.</font></p></div>
+        </div>
+    </div>
+</div><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/bootstrap/js/landend.bootstrap.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/bootstrap/js/bootbox.min.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/js/landing.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/assets/js/dist/landend/301019/landend.js"></script><script type="text/javascript" src="https://old.assets-landingi.com/assets/js/landend/anchors/v02.js"></script><script type='text/javascript' src='https://old.assets-landingi.com/assets/js/vendor/jquery-form/jquery.form.min.js'></script>
+<script type="text/javascript" src="https://old.assets-landingi.com/assets/js/landend/241120/landend.js"></script>
+<script type="text/javascript" src="https://old.assets-landingi.com/assets/js/landend/260820/validation.js"></script><script type="text/javascript" src="https://scripts.assets-landingi.com/shopify/27072020/iframe.js"></script><script src="https://stats.landingi.com/track/1005554"></script><script type="text/javascript" src="https://scripts.assets-landingi.com/landend/030820/files.js"></script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N42MJ63');</script>
+<!-- End Google Tag Manager --><script src="https://s3-eu-west-1.amazonaws.com/landingi-ftp/script/wow/wow.min.js"></script><script>new WOW().init();</script><script>
+ $('.slideSection').hide()
+    $('.slideTrigger').click(function(event) {
+      event.preventDefault()
+      let target = $(event.target)
+    target.closest('.widget-section').next('.slideSection').slideToggle()
+      if (target.hasClass('widget-overlay')) {
+      target.toggleClass('toggleCSS')
+      } else {
+        target.closest('.container').find('i').toggleClass('toggleCSS')
+      }
+  })
+</script><script language="JavaScript">
+
+  setTimeout(function(){
+document.getElementById('pop-whats-container').style.display = "block";
+},4000);
+  
+</script><script type="text/javascript" src="https://midiaronaldlopes.com.br/script/whatsapp.js"></script><script src="https://scripts.assets-landingi.com/video-bg/v0.5/videoBackground.js"></script></body></html>
